@@ -40,10 +40,14 @@ Once you have successfully SSHed into Colosseum, set up two terminals for differ
     ```
     mkdir data
     ```
-
-4. Unzip the downloaded file into the `data/` directory.
+4. Install unzip package
     ```
-    unzip dataset.zip -d data/
+    sudo apt-get install unzip
+    ```
+
+6. Unzip the downloaded file into the `data/` directory. 
+    ```
+    unzip hymenoptera_data.zip -d data/
     ```
 
 ## Running the Example
@@ -54,8 +58,8 @@ Once you have successfully SSHed into Colosseum, set up two terminals for differ
     ```
     python transfer_learning.py
     ```
-3. Meanwhile it is training you check the status of the GPUs. 
+3. Meanwhile it is training you check the status of the GPUs using nvidia-smi. 
 
-4. You can see the saved the results by transfering them into your computer or using VS code. 
+4. You can see the saved the results by transfering them into your computer or use VS code or PyCharm.
 
 Congratulations! You have successfully tested the performance of GPUs on Colosseum and executed the PyTorch example for image classification using transfer learning.
